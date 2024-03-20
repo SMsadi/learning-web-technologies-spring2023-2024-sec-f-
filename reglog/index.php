@@ -32,7 +32,35 @@ if(!empty($_SESSION["id"])){
     <title>Index</title>
 </head>
 <body>
-    <h1>Welcome</h1>
+    <h1 class="">Welcome To Dashboard</h1>
+
+    <table border="1" align="right">
+            <tr>
+                <th colspan="8">
+                <a href="profile.php">Edit Profile</a>
+                <br><br>
+                <a href="">Jobs</a>
+                <br><br>
+                <a href="">Tutoring History</a>
+                <br><br>
+                <a href="">Membership</a>
+                <br><br>
+                <a href="">Premium Request</a>
+                <br><br>
+                <a href="">Settings</a>
+                <br><br>
+                </th>
+            </tr>
+    </table>
+
+
+   
+    <p>Country's #1 Tutor Matching
+    & Learning Platform.
+    <br>
+    Hire a conversant tutor to make your children's learning fun, comprehensive & easier.</p>
+
+    <br><br>
     <a href="logout.php">Logout</a>
 </body>
 </html>
