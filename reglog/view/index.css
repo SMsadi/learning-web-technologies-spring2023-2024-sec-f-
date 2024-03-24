@@ -1,0 +1,86 @@
+.Country{
+    margin-left: 510px;
+    font-size: 20px;
+    color: blue;
+
+}
+
+
+
+/*
+.index{
+    margin-top: 40px;
+    margin-left: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+.welcome{
+    margin-left: 500px;
+    
+}
+
+.Country{
+    margin-left: 510px;
+    font-size: 20px;
+    color: yellowgreen;
+
+}
+
+.Subject{
+    margin-top: 40px;
+    font-size: 40px;
+    margin-left: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #3c65f5;
+   
+
+}
+
+.math{
+    margin-top: 40px;
+    margin-left: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: orangered;
+}
+
+.physics{
+    margin-top: 40px;
+    margin-left: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: firebrick;
+}
+
+
+.chemistry{
+    margin-top: 40px;
+    margin-left: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: slateblue;
+}
+
+
+.biology{
+    margin-top: 40px;
+    margin-left: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: yellowgreen;
+}
+
+.how{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 100px;
+    font-size: 20px;
+    color: #c90d84;
+}
+
+
+.profile{
+    color: red;
+}
+
+
+.email{
+    color: crimson;
+}
