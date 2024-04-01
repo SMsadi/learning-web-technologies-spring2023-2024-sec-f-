@@ -117,7 +117,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 
-if ($firstName_error || $lastName_error || $email_error) {
+if ($firstName_error || $lastName_error || $email_error || $dob_error) {
     echo "please check again";
 } else {
     echo "Form submitted";
