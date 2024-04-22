@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Blood Group:</legend>
+            <input type="radio" id="A+" name="bloodGroup" value="A+">
+            <label for="A+">A+</label><br>
+            <input type="radio" id="A-" name="bloodGroup" value="A-">
+            <label for="A-">A-</label><br>
+            <input type="radio" id="B+" name="bloodGroup" value="B+">
+            <label for="B+">B+</label><br>
+            <input type="radio" id="B-" name="bloodGroup" value="B-">
+            <label for="B-">B-</label><br>
+            <input type="radio" id="AB+" name="bloodGroup" value="AB+">
+            <label for="AB+">AB+</label><br>
+            <input type="radio" id="AB-" name="bloodGroup" value="AB-">
+            <label for="AB-">AB-</label><br>
+            <input type="radio" id="O+" name="bloodGroup" value="O+">
+            <label for="O+">O+</label><br>
+            <input type="radio" id="O-" name="bloodGroup" value="O-">
+            <label for="O-">O-</label><br>
+        </fieldset>
+        <span id="bloodGroupError" class="error"></span><br><br>
+        <input type="submit" value="Submit" onclick="validateBloodGroup()">
+    </form>
+
+    <script>
+        function validateBloodGroup() {
+            let bloodGroupRadios = document.getElementsByName('bloodGroup');
+            let bloodGroupError = document.getElementById('bloodGroupError');
+            let selectedCount = 0;
+
+            // Loop through radio buttons to count the selected ones
+            for (var i = 0; i < bloodGroupRadios.length; i++) {
+                if (bloodGroupRadios[i].checked) {
+                    selectedCount++;
+                }
+            }
+
+            if (selectedCount== 1) {
+                alert('blood group submitted');
+               
+            }
+
+            // Check if more than one radio button is selected
+            if (selectedCount !== 1) {
+                bloodGroupError.textContent = 'Please select one blood group';
+                event.preventDefault(); // Prevent form submission
+            } else {
+                bloodGroupError.textContent = ''; 
+            }
+        }
+    </script>
+</body>
+</html>

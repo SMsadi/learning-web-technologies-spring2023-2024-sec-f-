@@ -6,7 +6,6 @@
     <title>Degree</title>
 </head>
 <body>
- 
     <form>
         <fieldset>
             <legend>Degree</legend>
@@ -37,11 +36,11 @@
                 }
             }
 
-            
             if (!isValid) {
                 degreeError.textContent = 'Please select at least one degree';
             } else {
                 degreeError.textContent = ''; 
+                alert('Degrees submitted successfully');
             }
         }
     </script>
